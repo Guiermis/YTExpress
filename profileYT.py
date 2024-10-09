@@ -49,19 +49,8 @@ if __name__ == '__main__':
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     
     # Define your channel IDs here, with channel names as keys
-    channel_ids = {
-    'RICtv':'UCBiZg7ojHPU8ShY7s8xQ6bg',
-    'RN24H':'UCR2vSUFSqUMy-sDJEdHeaYA',
-    'RIC Rural':'UC0pjfx6qXTDcRlR9bcr_VYA',
-    'Jovem Pan Grupo RIC': 'UCgTVofcrHPsDAadZkYraU6g',
-    'RIC Entretenimento':'UCGfBE94turq_hyKMxB-Dfrg',
-    'GRANDS':'UCs_YgpVHRgjOnKo9RvYfciA',
-    'RICtv Londrina':'UC9GobOkoAvmuw3pXSjwQnIg',
-    'RIC Podcasts':'UCkF5o3ktqXuEuEO6EZIOTOA',
-    'RICtv Maringá':'UClG5ECaZCBQCzCpSqI7hWUA',
-    'RIC Portal':'UCJ3gxlwoZMqKwOoqKrO-4dA',
-    'RICtv Oeste':'UCDes47D0_xrzOm_r7b9RQAQ',
-    }
+    c = open('channel_ids.json')
+    channel_ids = json.load(c)
     
     # Initialize an empty DataFrame
     final_df = pd.DataFrame()
