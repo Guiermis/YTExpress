@@ -50,6 +50,7 @@ if __name__ == '__main__':
     
     # Define your channel IDs here, with channel names as keys
     c = open('channel_ids.json')
+    #c is used only for reading the channel_ids file.
     channel_ids = json.load(c)
     
     # Initialize an empty DataFrame
