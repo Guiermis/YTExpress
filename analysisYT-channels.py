@@ -131,7 +131,3 @@ if __name__ == '__main__':
 
     # Update the worksheet starting from the first empty row
     aba.update(range_name=f'A{first_row}', values=data_to_insert)
-
-    file_path = (r'C:\Users\guilherme.oliveira\Desktop\python womp womp\DADOS\BAGULHO.xlsx')
-
-    final_df.to_excel(file_path, index=False)
