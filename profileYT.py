@@ -13,6 +13,7 @@ from googleapiclient.errors import HttpError
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2 import service_account
 
+#whole code structure updated, now it'll work better with everything
 report_day = datetime.today() - timedelta(days=3)
 formatted_date = report_day.strftime('%Y-%m-%d')
 
