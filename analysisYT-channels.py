@@ -38,11 +38,11 @@ def first_empty_row(worksheet):
 
 API_SERVICE_NAME = 'youtubeAnalytics'
 API_VERSION = 'v2'
-CLIENT_SECRETS_FILE = r'C:\Users\guilherme.oliveira\Desktop\python womp womp\client_secret.json'
+CLIENT_SECRETS_FILE = r'client_secret.json'
 def get_service(channel_name):
     creds = None
     # Each channel has its unique token file based on its name
-    credentials_path = f'C:\\Users\\guilherme.oliveira\\Desktop\\python womp womp\\pickles\\token_{channel_name}.pickle'
+    credentials_path = f'pickles\\token_{channel_name}.pickle'
 
     # Load the existing credentials if they exist
     if os.path.exists(credentials_path):
